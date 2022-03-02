@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import BrandLogo from "../public/Carytown-Massage-Logo.svg";
 import Link from "next/link";
+const imageLoader = require("../loader");
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
             height={100}
             priority
             alt="Carytown Massage Logo"
+            loader={imageLoader}
           ></Image>
         </div>
         <h4 className="heading">
