@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main>
 
-        <div class="logoDiv">
+        <div className="logoDiv">
 
           <Image
             src={BrandLogo}
@@ -18,13 +18,13 @@ export default function Home() {
             alt="Carytown Massage Logo"
           ></Image>
         </div>
-        <h4 class="heading">
+        <h4 className="heading">
           Massage On Main is now Carytown Massage.
         </h4>
-        <p class="body">
+        <p className="body">
           Please visit our new website to book appointments or contact us. You can visit our new website by clicking the button below.
         </p>
-        <div class="buttonDiv">
+        <div className="buttonDiv">
           <Link
             href="https://carytownmassage.com/"
             passHref
