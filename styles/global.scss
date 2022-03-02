@@ -1,0 +1,138 @@
+@use "../node_modules/rfs/scss.scss" as rfs;
+
+$primary-color: #ff6f61;
+$secondary-color: #ea6876;
+$light-color: #f8a29d;
+$background-color: #f8f8ff;
+$text-color: #272727;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  font-family: quasimoda, sans-serif;
+  @include rfs.font-size(16px);
+}
+
+h1 {
+  @include rfs.font-size(60px);
+  @include rfs.margin-top(60px);
+  @include rfs.margin-bottom(60px);
+}
+
+h2 {
+  @include rfs.font-size(50px);
+  @include rfs.margin-top(50px);
+  @include rfs.margin-bottom(50px);
+}
+
+h3 {
+  @include rfs.font-size(40px);
+  @include rfs.margin-top(40px);
+  @include rfs.margin-bottom(40px);
+}
+
+h4 {
+  @include rfs.font-size(30px);
+  @include rfs.margin-top(30px);
+  @include rfs.margin-bottom(30px);
+}
+
+h5 {
+  @include rfs.font-size(20px);
+  @include rfs.margin-top(20px);
+  @include rfs.margin-bottom(20px);
+}
+
+p {
+  @include rfs.font-size(16px);
+  @include rfs.margin-top(16px);
+  @include rfs.margin-bottom(16px);
+}
+
+span {
+  @include rfs.font-size(16px);
+  @include rfs.margin-top(16px);
+  @include rfs.margin-bottom(16px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  @include rfs.font-size(16px);
+  @include rfs.margin-top(16px);
+  @include rfs.margin-bottom(16px);
+}
+
+#__next {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logoDiv {
+    @include rfs.margin-top(100px);
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    width: fit-content;
+    @include rfs.margin-top(60px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body {
+    width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonDiv {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 10px 12px;
+  border-radius: 50px;
+  color: $background-color;
+  transition: ease 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    background-color: $background-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  > a {
+    font-weight: 600;
+    margin: 0;
+  }
+}
