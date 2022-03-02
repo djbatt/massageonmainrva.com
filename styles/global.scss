@@ -101,12 +101,16 @@ a {
 .heading {
     width: fit-content;
     @include rfs.margin-top(60px);
+    @include rfs.padding-left(16px);
+    @include rfs.padding-right(16px);
     margin-left: auto;
     margin-right: auto;
 }
 
 .body {
     width: fit-content;
+    @include rfs.padding-left(16px);
+    @include rfs.padding-right(16px);
   margin-left: auto;
   margin-right: auto;
 }
